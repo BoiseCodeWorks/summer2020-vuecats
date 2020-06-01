@@ -3,13 +3,23 @@
     <div id="nav" class="bg-info text-white">
       <!-- <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>-->
-      <h1>Moody-Kittens</h1>
+      <h1>
+        Moody-
+        <img class="vue-v" src="./assets/logo.png" />ittens
+      </h1>
     </div>
     <router-view />
   </div>
 </template>
 
 <style>
+.vue-v {
+  height: 1em;
+  transform: rotate(90deg);
+  border-bottom: 10px solid green;
+  margin-right: 10px
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
